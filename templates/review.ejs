@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Root Generator</title>
+</head>
+<body>
+    <h1>Review Application</h1>
+    <div style="border: solid black 1px;">
+    <form action="" id="form" method="post">
+    <strong>Email Address:</strong> <input type="email" name="email"  style="margin-bottom: 20px;"><br>
+    </div>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit Application">
+    </form>
+    <hr>
+    <h3><a href="/">HOME</a></h3>
+</body>
+<script>
+    const form = document.getElementById("form");
+    const {hostname, port} = window.location()
+
+    const url = `http://${hostname}:${port}/review`;
+
+    form.action = url;
+
+</script>
+</html>

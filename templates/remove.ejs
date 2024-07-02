@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Remove of All Applications</h1>
+    <form action="" method="post" id="form">
+    <input type="submit" value="Remove all applicants">
+    </form>
+    <hr>
+    <h3><a href="/">HOME</a></h3>
+    <script>
+        const form = document.getElementById("form");
+        const {hostname, port} = window.location()
+
+        const url = `http://${hostname}:${port}/removeApp`;
+
+        form.action = url;
+
+    </script>
+</body>
+</html>
